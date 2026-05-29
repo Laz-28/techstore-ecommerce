@@ -1,7 +1,7 @@
 <?php
 
 $host = 'localhost';
-$dbname = 'ecommerce_project';
+$dbname = 'Week4db';
 $db_user = 'root'; 
 $db_pass = '';     
 

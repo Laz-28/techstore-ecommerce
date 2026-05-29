@@ -1,7 +1,7 @@
 <?php
 
 session_start(); 
-require 'db.php'; 
+require __DIR__ . '/includes/db.php';
 
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['action']) && $_POST['action'] === 'register') {
@@ -14,7 +14,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['action']) && $_POST['
         $stmt->execute([$username, $email, $password]);
         $_SESSION['user_id'] = $pdo->lastInsertId();
         $_SESSION['username'] = $username;
-        header("Location: landing.php"); 
+        header("Location: dashboard.php"); 
         exit();
     } catch (PDOException $e) {
         die("Registration failed. Email might already exist.");
@@ -32,7 +32,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['action']) && $_POST['
     if ($user && password_verify($password, $user['password'])) {
         $_SESSION['user_id'] = $user['id'];
         $_SESSION['username'] = $user['username'];
-        header("Location: landing.php");
+        header("Location: dashboard.php");
         exit();
     } else {
         die("Invalid email or password.");

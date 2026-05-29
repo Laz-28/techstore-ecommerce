@@ -2,7 +2,7 @@
 session_start();
 
 if (!isset($_SESSION['user_id'])) {
-    header("Location: index.html"); 
+    header("Location: index.php"); 
     exit();
 }
 ?>
@@ -124,28 +124,28 @@ if (!isset($_SESSION['user_id'])) {
 
     <section class="products">
         <div class="card">
-            <img src="./Images/wks.webp" alt="Laptop">
+            <img src="../Images/wks.webp" alt="Laptop">
             <h3>ProBook Workstation</h3>
             <p class="price">Ksh 129,900</p>
             <button class="buy-btn">Add to Cart</button>
         </div>
         
         <div class="card">
-            <img src="./Images/noisecancelling.avif" alt="Headphones">
+            <img src="../Images/noisecancelling.avif" alt="Headphones">
             <h3>Noise-Canceling Pods</h3>
             <p class="price">Ksh 19,900</p>
             <button class="buy-btn">Add to Cart</button>
         </div>
 
         <div class="card">
-            <img src="./Images/4k.jpeg" alt="Monitor">
+            <img src="../Images/4k.jpeg" alt="Monitor">
             <h3>4K Ultra Display</h3>
             <p class="price">Ksh 39,900</p>
             <button class="buy-btn">Add to Cart</button>
         </div>
 
         <div class="card">
-            <img src="./Images/Asus.jpeg" alt="Asus Nvidia 1050">
+            <img src="../Images/Asus.jpeg" alt="Asus Nvidia 1050">
             <h3>Asus GTX 1050ti</h3>
             <p class="price">Ksh 15,000</p>
             <button class="buy-btn">Add to Cart</button>
@@ -153,28 +153,28 @@ if (!isset($_SESSION['user_id'])) {
         </div>
 
         <div class="card">
-            <img src="./Images/l13.webp" alt="Laptop">
+            <img src="../Images/l13.webp" alt="Laptop">
             <h3>Lenovo L13 Yoga</h3>
             <p class="price">Ksh 45,900</p>
             <button class="buy-btn">Add to Cart</button>
         </div>
         
         <div class="card">
-            <img src="./Images/macmini.webp" alt="Mac Mini">
+            <img src="../Images/macmini.webp" alt="Mac Mini">
             <h3>Apple Mac Mini</h3>
             <p class="price">Ksh 69,900</p>
             <button class="buy-btn">Add to Cart</button>
         </div>
 
         <div class="card">
-            <img src="./Images/13pro.webp" alt="Iphone 13 pro">
+            <img src="../Images/13pro.webp" alt="Iphone 13 pro">
             <h3>iPhone 13 Pro</h3>
             <p class="price">Ksh 69,900</p>
             <button class="buy-btn">Add to Cart</button>
         </div>
 
         <div class="card">
-            <img src="./Images/1060.jpeg" alt="Nvidi 1060">
+            <img src="../Images/1060.jpeg" alt="Nvidi 1060">
             <h3>Nvidia GTX 1060 8GB</h3>
             <p class="price">Ksh 18,000</p>
             <button class="buy-btn">Add to Cart</button>
@@ -182,7 +182,7 @@ if (!isset($_SESSION['user_id'])) {
         </div>
 
         <div class="card">
-            <img src="./Images/oraimo.webp" alt="Oraimo free pods">
+            <img src="../Images/oraimo.webp" alt="Oraimo free pods">
             <h3>Oraimo Free Pods Neo</h3>
             <p class="price">Ksh 2,000</p>
             <button class="buy-btn">Add to Cart</button>
