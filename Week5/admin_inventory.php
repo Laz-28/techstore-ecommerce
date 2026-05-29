@@ -1,16 +1,16 @@
 <?php
-// admin_inventory.php
+
 session_start();
 
 if (!isset($_SESSION['user_id']) || $_SESSION['role'] !== 'admin') {
-    // Redirect unauthorized users back to the regular dashboard (or index)
+   
     header("Location: dashboard.php"); 
     exit();
 }
 
 require 'includes/db.php';
 
-// --- CREATE OPERATION ---
+
 if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['action']) && $_POST['action'] === 'create') {
     $stmt = $pdo->prepare("INSERT INTO products (name, price, image_url, description) VALUES (?, ?, ?, ?)");
     $stmt->execute([$_POST['name'], $_POST['price'], $_POST['image_url'], $_POST['description']]);
